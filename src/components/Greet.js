@@ -5,11 +5,12 @@ import React from 'react'
 // }
 
 const Greet = props => {
-    console.log(props)
+    const { name, role } = props
+
     return (
         <div>
-            <h1>Greetings, { props.name } with role { props.role }</h1>
-            {props.children}
+            <h1>Greetings, { name } with role { role }</h1>
+            {/* {props.children} */}
         </div>
     )
 }
