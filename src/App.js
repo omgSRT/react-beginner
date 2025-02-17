@@ -11,12 +11,26 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
+import './css/appStyle.css'
+import style from  './css/appStyle.module.css'
+import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 
 class App extends Component{
   render() {
     return (
       <div className="App">
-        <NameList />
+        <LifeCycleA />
+
+
+        {/* <Form /> */}
+        {/* <h1 className='error'>Error</h1>
+        <h1 className={style.success}>Success</h1> */}
+        {/* <Inline /> */}
+        {/* <StyleSheet primary={false} /> */}
+        {/* <NameList /> */}
         {/* <UserGreeting /> */}
         {/* <ParentComponent /> */}
         {/* <EventBind/> */}
