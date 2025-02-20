@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import ParentComp from './components/ParentComp';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 class App extends Component{
   render() {
     return (
       <div className="App">
-        <ParentComp />
-
+        <FRParentInput />
 
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
