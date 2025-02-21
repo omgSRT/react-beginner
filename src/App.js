@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import FocusInput from './components/FocusInput';
-import FRParentInput from './components/FRParentInput';
+import Human from './components/Human';
+import ErrorBoundary from './components/ErrorBoundary';
 
 class App extends Component{
   render() {
     return (
       <div className="App">
-        <FRParentInput />
+        <ErrorBoundary>
+          <Human humanName="Human"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Human humanName="dog"/>
+        </ErrorBoundary>
 
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
