@@ -1,19 +1,15 @@
 import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import Human from './components/Human';
-import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 class App extends Component{
   render() {
     return (
       <div className="App">
-        <ErrorBoundary>
-          <Human humanName="Human"/>
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Human humanName="dog"/>
-        </ErrorBoundary>
+        <ClickCounter name='omgsrt'/>
+        <HoverCounter />
 
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
